@@ -42,7 +42,7 @@ def pause():
 #function for resume button
 def resume():
     pygame.mixer.music.unpause()
-
+#Creating Buttons 
 Button1=tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold",text="Play Music",command=play, bg="lime green", fg="black")
 
 Button2=tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold",text="Stop Music",command=ExitMusicPLayer, bg="red", fg="black")
