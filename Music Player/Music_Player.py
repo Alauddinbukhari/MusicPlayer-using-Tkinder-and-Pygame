@@ -29,19 +29,19 @@ pygame.mixer.init()
 
 #Function  for play button 
 def play():
-    pygame.mixer_music.load(playlist.get(tkr.ACTIVE))
+    pygame.mixer.music.load(playlist.get(tkr.ACTIVE))
     var.set(playlist.get(tkr.ACTIVE))
-    pygame.mixer_music.play()
+    pygame.mixer.music.play()
  #function for stop button                               
 def ExitMusicPLayer():
-    pygame.mixer_music.stop()
+    pygame.mixer.music.stop()
 
 #function for pause button
 def pause():
-    pygame.mixer_music.pause()
+    pygame.mixer.music.pause()
 #function for resume button
 def resume():
-    pygame.mixer_music.unpause()
+    pygame.mixer.music.unpause()
 
 Button1=tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold",text="Play Music",command=play, bg="lime green", fg="black")
 
