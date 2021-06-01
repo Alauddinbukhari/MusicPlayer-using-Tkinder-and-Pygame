@@ -54,11 +54,11 @@ Button4=tkr.Button(musicplayer, width=5, height=3, font="Cambria 20 bold",text="
 var=tkr.StringVar()
 songtitle = tkr.Label(musicplayer,font="Helvetic 12 bold",textvariable=var)
 songtitle.pack()
-
+#packing the buttons to display
 Button1.pack(fill="x")
 Button2.pack(fill="x")
 Button3.pack(fill="x")
 Button4.pack(fill="x")
 playlist.pack(fill="both",expand="yes")
-
+# for continuous running of music payer
 musicplayer.mainloop()
